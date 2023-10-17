@@ -571,4 +571,45 @@ void turn_block(int clockwise)
 		}
 		PlaySoundMem(SoundEffect[1], DX_PLAYTYPE_BACK, TRUE);
 	}
-	//12ページ目
+
+/*************************************************
+*ブロック機能：ブロックの横一列確認処理
+*引数：なし
+*戻り値：なし
+**************************************************/
+
+void check_line(void)
+{
+	int i, j, k;		//ループカウンタ
+
+	for (i = 0; i < FIELD_HEIGHT - 1; i++)
+	{
+		for (j = 1; j < FIELD_WIDTH; j++)
+		{
+			//行の途中があいているか？
+			if (Field[i][j] == E_BLOCK_EMPTY)
+			{
+				break;
+			}
+		}
+
+		//一行揃っていたら、カウントを増やし、一段下げる
+		if (j >= FIELD_WIDTH)
+		{
+			//カウントを増加
+			DeleteLine++;
+
+			//一段下げる
+			for (k = i; k > 0; k--)
+			{
+				for (j = 1; j < FIELD_WIDTH; j++)
+				{
+					Field[k][j] = Field[k - 1][j];
+				}
+			}
+			PlaySoundMem(SoundEffect[0], DX_PLAYTYPE_BACK, TRUE);
+		}
+	}
+
+}
+
