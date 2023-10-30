@@ -53,7 +53,7 @@ void InputControl_Initialize(void)
 *戻り値：なし
 ******************************************/
 
-void InputoControl_Update(void)
+void InputControl_Update(void)
 {
 	int i;		//ループカウンタ
 	XINPUT_STATE input_controller;		//コントローラーの入力情報
@@ -191,7 +191,7 @@ int GetButtonDown(int button)
 * 戻り値：TRUE（押した瞬間）、FALSE（押した瞬間ではない）
 *************************************************/
 
-int GetbuttonUp(int button)
+int GetButtonUp(int button)
 {
 	int ret = FALSE;
 

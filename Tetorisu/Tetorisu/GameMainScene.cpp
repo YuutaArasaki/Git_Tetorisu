@@ -85,7 +85,7 @@ void GameMainScene_Update(void)
 *–ß‚è’lF‚È‚µ
 ***********************************************/
 
-void GameMainSvcene_Draw(void)
+void GameMainScene_Draw(void)
 {
 	//”wŒi‚Ì•`‰æ
 	DrawGraph(0, 0, BackGround_image, TRUE);
@@ -105,7 +105,7 @@ void GameMainSvcene_Draw(void)
 *–ß‚è’lF‚È‚µ
 ********************************************/
 
-int GetScore(void)
+int Get_Score(void)
 {
 	return Score;
 }

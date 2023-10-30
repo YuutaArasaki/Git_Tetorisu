@@ -63,7 +63,10 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	InputControl_Initialize();
 
 	//描画先画面を裏にする
-	SetDrawScreen(FONT_SIZE);
+	SetDrawScreen(DX_SCREEN_BACK);
+
+	//文字サイズを設定
+	SetFontSize(FONT_SIZE);
 
 	//ゲームループ
 	while(ProcessMessage() == 0 && GetExitButton() != TRUE && ErrorCheck() ==
@@ -87,12 +90,6 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		//裏画面の内容を表画面に反映
 		ScreenFlip();
 	}
-
-
-	//入力待機
-
-	//WaitKey();
-
 
 	//Dxライブラリ使用の終了処理
 
