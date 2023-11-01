@@ -45,7 +45,6 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 
 	//Dxライブラリの初期化処理
-
 	if (DxLib_Init() == -1)
 	{
 		//エラー終了
@@ -69,7 +68,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	SetFontSize(FONT_SIZE);
 
 	//ゲームループ
-	while(ProcessMessage() == 0 && GetExitButton() != TRUE && ErrorCheck() ==
+	while (ProcessMessage() == 0 && GetExitButton() != TRUE && ErrorCheck() ==
 		D_NORMALITY)
 	{
 		//フレーム制御機能更新処理
