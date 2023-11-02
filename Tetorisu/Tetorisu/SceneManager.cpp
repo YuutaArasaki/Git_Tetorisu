@@ -43,6 +43,7 @@ void SceneManager_Initialize(GAME_MODE mode)
 
 	case E_GAMEMAIN:
 		read_error = GameMainScene_Initialize();		//ƒQ[ƒ€ƒƒCƒ“‰æ–Ê‚Ì‰Šú‰»
+		break;
 
 	case E_RANKING:
 		if (game_mode == E_GAMEMAIN)

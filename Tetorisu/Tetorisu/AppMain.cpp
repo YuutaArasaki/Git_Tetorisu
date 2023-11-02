@@ -67,7 +67,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	//文字サイズを設定
 	SetFontSize(FONT_SIZE);
 
-	
+
 
 	//ゲームループ
 	while (ProcessMessage() == 0 && GetExitButton() != TRUE && ErrorCheck() ==

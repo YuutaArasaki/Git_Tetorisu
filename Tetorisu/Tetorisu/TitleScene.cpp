@@ -53,7 +53,7 @@ int TitleScene_Initialize(void)
 
 	for (int i = 0; i < E_SOUND_MAX; i++)
 	{
-		if (sounds[i] = -1)
+		if (sounds[i] == -1)
 		{
 			ret = -1;
 			break;

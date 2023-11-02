@@ -437,7 +437,7 @@ void change_block(void)
 	//ストック先が空かどうか確認
 	if (Stock_Flg == TRUE)
 	{
-		for (i = 0; i < BLOCK_TROUT_SIZE; j++)
+		for (i = 0; i < BLOCK_TROUT_SIZE; i++)
 		{
 			for (j = 0; j < BLOCK_TROUT_SIZE; j++)
 			{
