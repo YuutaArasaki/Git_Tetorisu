@@ -359,7 +359,7 @@ void create_block(void)
 	//新しいブロックをセット＆次のブロックを生成
 	for (i = 0; i < BLOCK_TROUT_SIZE; i++)
 	{
-		for (j = 0; i < BLOCK_TROUT_SIZE; j++)
+		for (j = 0; j < BLOCK_TROUT_SIZE; j++)
 		{
 			DropBlock[i][j] = Next[i][j];
 			Next[i][j] = (BLOCK_STATE)C_BLOCK_TABLE[block_type][i][j];

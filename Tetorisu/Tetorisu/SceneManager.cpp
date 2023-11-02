@@ -116,12 +116,15 @@ void SceneManager_Draw(void)
 	case E_TITLE:
 		TitleScene_Draw();
 		break;
+
 	case E_GAMEMAIN:
 		GameMainScene_Draw();
 		break;
+
 	case E_RANKING:
 		RankingScene_Draw();
 		break;
+
 	case E_END:
 	default:
 		EndScene_Draw();
