@@ -90,6 +90,7 @@ void InputControl_Update(void)
 			case E_NONE:
 			case E_RELEASED:
 				button_state[i] = E_NONE;
+				break;
 
 			case E_CLICK:
 			case E_PRESS:

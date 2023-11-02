@@ -321,7 +321,7 @@ void ranking_input_name(void)
 			if (Cursor.x < 10)
 			{
 				c = '0' + Cursor.x;
-				New_Score.name[name_num] = c;
+				New_Score.name[name_num++] = c;
 			}
 			else if (Cursor.x == 10)
 			{
