@@ -535,7 +535,7 @@ void turn_block(int clockwise)
 
 		for (i = 0; i < BLOCK_TROUT_SIZE; i++)
 		{
-			for (j = 0; BLOCK_TROUT_SIZE; j++)
+			for (j = 0; j <BLOCK_TROUT_SIZE; j++)
 			{
 				if (DropBlock[i][j] != E_BLOCK_EMPTY)
 				{
