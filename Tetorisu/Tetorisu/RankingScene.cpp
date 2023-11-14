@@ -208,13 +208,13 @@ void file_write(void)
 
 	if (fp == NULL)
 	{
-		OutputDebugString("ファイルが読み込めません");
+		OutputDebugString("ファイルが書き込めません");
 	}
 	else
 	{
 		for (i = 0; i < RANKING_MAX; i++)
 		{
-			fprintf(fp, "%2d, %[^,], %10d\n", Ranking_Date[i].rank,
+			fprintf(fp, "%2d, %s, %10d\n", Ranking_Date[i].rank,
 				Ranking_Date[i].name, Ranking_Date[i].score);
 		}
 
