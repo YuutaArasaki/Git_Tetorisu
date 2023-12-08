@@ -366,6 +366,9 @@ void ranking_input_name_draw(void)
 			255), "%-3c", '0' + i);
 	}
 
+	DrawFormatString(787, 530, GetColor(255, 255, 255), "Á");
+	DrawFormatString(840, 530, GetColor(255, 255, 255), "Œˆ");
+
 	DrawFormatString(300, 220, GetColor(255, 255, 255), ">%s", New_Score.name);
 
 	SetFontSize(20);
