@@ -142,3 +142,7 @@ int Get_Score(void)
 }
 
 
+int Get_Level(void)
+{
+	return Level;
+}

@@ -19,4 +19,5 @@ void GameMainScene_Update(void);
 void GameMainScene_Draw(void);
 
 int Get_Score(void);
+int Get_Level(void);
 
